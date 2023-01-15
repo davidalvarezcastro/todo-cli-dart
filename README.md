@@ -33,6 +33,6 @@ $ dart test
 ## Build
 
 ```bash
-$ dart compile exe bin/todo_in_memory_dart.dart
-$ ./bin/todo_in_memory_dart.exe
+$ dart compile exe bin/todo.dart
+$ ./bin/todo.exe
 ```
