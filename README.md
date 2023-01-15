@@ -8,7 +8,7 @@ CLI app developed using Dart to store things to do in a small database. Very sim
 - Gets information from a specific TODO.
 - Deletes a specific TODO.
 - Saves TODO things using a database.
-- Loads & saves TODO things from JSON file (template based).
+- Loads & saves TODO things from JSON file (template based) (ongoing)
 
 ## Run
 
