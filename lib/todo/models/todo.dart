@@ -13,4 +13,9 @@ class Todo {
       required this.priority,
       required this.type,
       required this.id});
+
+  @override
+  String toString() {
+    return "Todo (id: $id, description: $description, priority: ${priority.name}, type: ${type.name})";
+  }
 }
