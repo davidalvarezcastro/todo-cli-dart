@@ -34,7 +34,6 @@ class CreateMenu extends State {
           saveTodo();
           print("\n\t TODO saved!\n");
         } catch (e) {
-          print(e);
           print("\n\t Failed to save TODO!\n");
         }
       }

@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:todo/cli/menu/cli.dart';
 import 'package:todo/cli/menu/create.dart';
+import 'package:todo/cli/menu/delete.dart';
 import 'package:todo/cli/menu/options.dart';
 import 'package:todo/cli/state.dart';
 import 'package:todo/todo/services/todo.dart';
@@ -41,9 +42,9 @@ class InitMenu extends Menu {
         case Option.create:
           context.state = CreateMenu(previous: this, service: service);
           break;
-        // case Option.delete:
-        //   context.state = DeleteMenu(previous: this);
-        //   break;
+        case Option.delete:
+          context.state = DeleteMenu(previous: this, service: service);
+          break;
         // case Option.read:
         //   context.state = ReadMenu(previous: this);
         //   break;

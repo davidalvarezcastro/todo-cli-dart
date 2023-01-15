@@ -8,4 +8,9 @@ class Todo {
 
   Todo.simple({required this.description});
   Todo({required this.description, required this.priority, required this.type});
+  Todo.full(
+      {required this.description,
+      required this.priority,
+      required this.type,
+      required this.id});
 }

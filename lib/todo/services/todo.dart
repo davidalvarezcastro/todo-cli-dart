@@ -9,7 +9,7 @@ abstract class InterfaceServiceTodo {
   void delete({required Todo todo});
 
   /// Get info from todo with id [id]
-  Todo get({required int id});
+  Todo? get({required int id});
 }
 
 class ServiceTodoPersistent implements InterfaceServiceTodo {
@@ -28,7 +28,7 @@ class ServiceTodoPersistent implements InterfaceServiceTodo {
   }
 
   @override
-  Todo get({required int id}) {
+  Todo? get({required int id}) {
     return dal.get(id: id);
   }
 }

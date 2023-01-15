@@ -8,5 +8,5 @@ abstract class InterfaceDalTodo {
   void delete({required Todo todo});
 
   /// Get info from todo with id [id]
-  Todo get({required int id});
+  Todo? get({required int id});
 }
