@@ -37,8 +37,7 @@ class JsonLoad extends State {
 
   List<dynamic> readJsonFile({required String path}) {
     try {
-      var path2 = "./data/template.json";
-      var input = File(path2).readAsStringSync();
+      var input = File(path).readAsStringSync();
       return jsonDecode(input);
     } catch (e) {
       rethrow;
