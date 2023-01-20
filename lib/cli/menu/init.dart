@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:todo/cli/menu/cli.dart';
 import 'package:todo/cli/menu/create.dart';
 import 'package:todo/cli/menu/delete.dart';
+import 'package:todo/cli/menu/json.dart';
 import 'package:todo/cli/menu/options.dart';
 import 'package:todo/cli/menu/read.dart';
 import 'package:todo/cli/state.dart';
@@ -49,10 +50,9 @@ class InitMenu extends Menu {
         case Option.read:
           context.state = ReadMenu(previous: this, service: service);
           break;
-        // TODO: load from JSON file
-        // case Option.load:
-        // context.state = ;
-        // break;
+        case Option.load:
+          context.state = JsonLoad(previous: this, service: service);
+          break;
         default:
           context.state = this;
           break;
